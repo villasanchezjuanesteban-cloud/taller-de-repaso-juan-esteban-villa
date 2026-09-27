@@ -1,0 +1,114 @@
+:root {
+    --color-azul: #2563eb;
+    --color-blanco: #e4e3ff;
+    --fondo: #6498cb;
+    --color-verde: rgb(68, 241, 160);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--fondo);
+    color: var(--oscuro);
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: var(--blanco);
+}
+
+header h2 {
+    color: var(--azul);
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--oscuro);
+}
+
+nav a:hover {
+    color: var(--azul);
+}
+
+/* Inicio */
+#inicio {
+    min-height: 500px;
+
+    background-image: url("../img/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 30px;
+}
+
+#inicio h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+#inicio p {
+    margin-bottom: 20px;
+}
+
+#inicio button {
+    background: var(--azul);
+    color: var(--blanco);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#inicio button:hover {
+    background: #1d4ed8;
+}
+
+/* Proyectos */
+#proyectos {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.contenedor-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+article {
+    background: var(--blanco);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+article h3 {
+    margin: 15px 0 10px;
+}
